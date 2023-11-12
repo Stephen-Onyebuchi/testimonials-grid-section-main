@@ -20,26 +20,24 @@ h2 {
 body {
     font-family: "BarlowBarlow Semi Condensed", sans-serif;
     font-size: 13px;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .container {
     max-width: 1440px;
-    margin: 100px auto;
-    /* height: 100vh; */
-    padding: 20px;
+    margin: 80px auto;
+    padding: 80px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: hsl(210, 46%, 95%);
 }
 
 .item {
     color: white;
     border-radius: 10px;
     padding: 30px;
-    margin: 10px;
-    /* background-color: aqua; */
-    background: white;
-    box-shadow: rgba(106, 106, 117, 0.5) 0px 48px 100px 0px;
+    margin: 15px;
+    box-shadow: hsl(0, 0%, 81%) 0px 48px 100px 0px;
 }
 
 .item .profile img {
@@ -100,6 +98,7 @@ body {
 @media (max-width: 768px) {
     .container {
         grid-template-columns: 1fr;
+        margin: 100px auto;
     }
 
     .item:nth-of-type(1) {
